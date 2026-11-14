@@ -6,7 +6,7 @@ Este projeto simula, para fins didáticos, testes de autenticação com Medusa e
 Laboratório executado em um GitHub Codespace com Ubuntu. Os testes foram feitos contra serviços locais do próprio Codespace (127.0.0.1).
 ## 1. Teste FTP
 Alvo local: 127.0.0.1. O Medusa encontrou uma combinação válida para o usuário ftpuser na lista de teste; a senha do laboratório era uma credencial de teste.
-[Evidência do teste FTP](imagens/WA_1794634726148.jpeg)
+[Evidência do teste FTP](Imagens/WA_1794634726148.jpeg)
 
 
 ## 2. Teste web (DVWA)
